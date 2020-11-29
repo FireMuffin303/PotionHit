@@ -1,0 +1,5 @@
+name: DamagedPotion
+version: 1.0
+author: FireMuffin303
+main: com.damagedpotion.firemuffin.main
+description: Get a random potion every time you got damaged.
