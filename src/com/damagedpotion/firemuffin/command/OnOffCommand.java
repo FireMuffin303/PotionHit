@@ -1,0 +1,21 @@
+package com.damagedpotion.firemuffin.command;
+
+import com.damagedpotion.firemuffin.main;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+/*public class OnOffCommand implements CommandExecutor {
+
+    @Override
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+        if(!commandSender instanceof Player){return true;}
+            Player player =(Player) commandSender;
+
+        if (command.getName().equalsIgnoreCase("dp enable")){
+            main.getInstance();
+        }
+        return true;
+    }
+}*/

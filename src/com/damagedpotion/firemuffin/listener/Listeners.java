@@ -15,7 +15,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Listeners implements Listener {
 
-    /*@EventHandler
+    @EventHandler
     public static void fromEntityDamage(EntityDamageByEntityEvent event){
         if (!(event.getEntity() instanceof Player)) {
             return;
@@ -25,7 +25,7 @@ public class Listeners implements Listener {
         if (!player.isBlocking()) {
             player.addPotionEffect(new PotionEffect(a.type, a.durarand, a.amprand));
         }
-    }*/
+    }
         @EventHandler
     public static void onPlayerDamaged(EntityDamageEvent event){
             if (!(event.getEntity() instanceof Player)) {
@@ -34,12 +34,7 @@ public class Listeners implements Listener {
             RandomEffect a = new RandomEffect();
             Player player = (Player) event.getEntity();
         if (event.getCause() == EntityDamageEvent.DamageCause.ENTITY_ATTACK|| event.getCause() == EntityDamageEvent.DamageCause.ENTITY_EXPLOSION || event.getCause() == EntityDamageEvent.DamageCause.ENTITY_EXPLOSION || event.getCause() == EntityDamageEvent.DamageCause.PROJECTILE) {
-            if (player.isBlocking()){
-                return;
-            }
-            else{
                 player.addPotionEffect(new PotionEffect(a.type, a.durarand, a.amprand));
-            }
         }
         else {
             player.addPotionEffect(new PotionEffect(a.type, a.durarand, a.amprand));
