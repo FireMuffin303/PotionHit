@@ -34,7 +34,7 @@ public class Listeners implements Listener {
             RandomEffect a = new RandomEffect();
             Player player = (Player) event.getEntity();
         if (event.getCause() == EntityDamageEvent.DamageCause.ENTITY_ATTACK|| event.getCause() == EntityDamageEvent.DamageCause.ENTITY_EXPLOSION || event.getCause() == EntityDamageEvent.DamageCause.ENTITY_EXPLOSION || event.getCause() == EntityDamageEvent.DamageCause.PROJECTILE) {
-                player.addPotionEffect(new PotionEffect(a.type, a.durarand, a.amprand));
+               return;
         }
         else {
             player.addPotionEffect(new PotionEffect(a.type, a.durarand, a.amprand));
